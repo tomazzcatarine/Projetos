@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do Aluno</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+
+    <nav>
+        <a href="/">Lançar Notas</a> |
+        <a href="/notas">Ver Notas</a>
+    </nav>
+
+    <div class="formulario">
+        <form action="/" method="post" class="notas_formulario">
+            <h2>Média do Aluno</h2>
+            <label for="">Nome do Aluno:</label>
+            <input required type="text" name="nome_aluno" id="nome_aluno"><br>
+
+            <label for="">Nota 1:</label>
+            <input required type="text" name="nota_1" id="nota_1"><br>
+
+            <label for="">Nota 2:</label>
+            <input required type="text" name="nota_2" id="nota_2"><br>
+
+            <label for="">Nota 3:</label>
+            <input required type="text" name="nota_3" id="nota_3">
+        
+            <div class="lançar">
+                <button type="submit" class="lançar_notas">Lançar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

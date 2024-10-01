@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --fonte-primaria: "Bebas Neue", sans-serif;
+    --fonte-secundaria: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff5dd;
+}
+
+nav {
+    background-color: #315539;
+    padding: 30px;
+    text-align: center;
+}
+
+nav a{
+    color: #315539;
+    border: 1px white;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 30px;
+
+}
+
+nav :hover{
+    background-color: #549061;
+    padding: 5px 15px;
+    border-radius: 50px;
+    color: white;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+}
+
+.formulario h2{
+    font-family: var(--fonte-primaria);
+    font-size: 52px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 5px;
+    color: #315539;
+}
+
+.notas_formulario{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #ffffff52;
+    border: 1px solid black;
+    padding: 40px;
+    margin-top: 50px;
+    box-shadow: 10px 10px #315539 ;
+    border-radius: 20px 0 0 0;
+}
+
+.notas_formulario input[type="text"]{
+    font-family: var(--fonte-secundaria);
+    border-radius: 50px;
+    padding: 10px 15px;
+}
+
+.notas_formulario input[type="text"]:hover{
+    background-color: #bcbcbc66;
+
+}
+
+.lançar [type="submit"]{
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    color: white;
+    background-color: #315539;
+    border: 1px #1b2f1f;
+    border-radius: 50px;
+    padding: 5px 15px;
+    cursor: pointer;
+    position: relative;
+    bottom: -18px;
+}
+
+.lançar [type="submit"]:hover{
+    opacity: 0.7;
+    color: white;
+}
+
+/* Página de ver as Notas*/
+.ver_nota{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+
+}
+ 
+.ver_nota h2{
+    font-family: var(--fonte-primaria);
+    font-size: 52px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 50px;
+    color: #315539;
+}
+ 
+.ver_notas_tabela{
+    width: 80%;
+    border-collapse: collapse;
+    font-family: var(--fonte-secundaria);
+}
+ 
+.ver_notas_tabela th, .ver_notas_tabela td{
+    border: 5px solid #fff5dd;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+ 
+.ver_notas_tabela th {
+    background-color: #549061;
+    font-weight: 600;
+    color: white;
+}
+ 
+.ver_notas_tabela td {
+    background-color: #ffffffb0;
+}
+ 
+.ver_notas_tabela tr:nth-child(even) {
+    background-color: #f1f1f1a3;
+}
+ 
+.ver_notas_tabela tr:hover {
+    background-color:  #5490617c;
+}
+ 
+.link_aluno{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+ 
+.link_aluno:hover{
+    border-radius: 10px;
+    animation-name: cor_link;
+    animation-duration: 1s;
+    background-color: #fdecdc;
+}
+ 
+@keyframes cor_link {
+    from {background-color: #315539;}
+    to {background-color: #b6e7c2;}
+}
